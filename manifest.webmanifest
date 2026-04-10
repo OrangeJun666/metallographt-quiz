@@ -1,0 +1,10 @@
+{
+  "name": "金相刷题",
+  "short_name": "金相刷题",
+  "display": "standalone",
+  "start_url": "./index.html",
+  "scope": "./",
+  "background_color": "#f2efe6",
+  "theme_color": "#0f766e",
+  "description": "金相题库刷题练习工具"
+}

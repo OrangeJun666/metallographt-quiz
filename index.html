@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>金相刷题</title>
+  <meta name="theme-color" content="#0f766e">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <main class="app">
+    <header class="app-header card">
+      <div>
+        <h1>金相刷题</h1>
+        <p id="datasetMeta">题库加载中...</p>
+      </div>
+      <button id="resetBtn" class="btn ghost">重置进度</button>
+    </header>
+
+    <section class="toolbar card">
+      <div class="segmented">
+        <button data-mode="sequential" class="btn mode-btn active">顺序刷题</button>
+        <button data-mode="random" class="btn mode-btn">随机刷题</button>
+        <button data-mode="wrong" class="btn mode-btn">错题重练</button>
+      </div>
+      <div class="status">
+        <span id="progressText">0 / 0</span>
+        <span id="accuracyText">正确率 0%</span>
+      </div>
+    </section>
+
+    <section class="card question-area">
+      <div class="question-head">
+        <span id="qidBadge" class="badge">Q1</span>
+        <span id="qtypeBadge" class="badge soft">单选</span>
+      </div>
+      <h2 id="questionText">正在准备题目...</h2>
+      <div id="questionMedia" class="question-media"></div>
+      <div id="optionList" class="option-list"></div>
+
+      <div class="actions">
+        <button id="submitBtn" class="btn primary">提交答案</button>
+        <button id="showAnswerBtn" class="btn">显示答案</button>
+        <button id="nextBtn" class="btn">下一题</button>
+      </div>
+
+      <div id="feedback" class="feedback hidden"></div>
+    </section>
+
+    <section class="card summary">
+      <h3>学习统计</h3>
+      <div class="summary-grid">
+        <div>
+          <p class="label">已作答</p>
+          <p id="doneCount" class="value">0</p>
+        </div>
+        <div>
+          <p class="label">答对</p>
+          <p id="correctCount" class="value">0</p>
+        </div>
+        <div>
+          <p class="label">错题数</p>
+          <p id="wrongCount" class="value">0</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
