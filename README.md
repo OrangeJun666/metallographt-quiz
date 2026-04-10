@@ -2,6 +2,7 @@
 
 一个可在电脑和手机浏览器运行的金相题库刷题工具，支持顺序刷题、随机刷题、错题重练、图片题显示和本地进度保存。
 
+## 使用AI工具制作~
 ## 功能概览
 
 - 支持单选/多选自动判题
@@ -79,27 +80,11 @@
 - `data/clean_report.txt`
 - `assets/images/`（图片提取）
 
-执行命令：
-
-```powershell
-e:/AAA工作/大三/下学期学校/金相大会/code/.venv/Scripts/python.exe scripts/clean_question_bank.py
-```
-
 ## 进度保存说明
 
 - 做题进度保存于浏览器 `localStorage`
 - 不同设备、不同浏览器的进度不共享
 - 清理浏览器站点数据后进度会丢失
-
-## GitHub Pages 远程访问（公网）
-
-1. 将项目推送到 GitHub 仓库（建议 Public）
-2. 打开仓库 `Settings -> Pages`
-3. `Source` 选择 `Deploy from a branch`
-4. 分支选 `main`，目录选 `/(root)`
-5. 保存后等待 1-3 分钟，访问：
-
-`https://你的用户名.github.io/你的仓库名/`
 
 ## 常见问题
 
@@ -123,4 +108,4 @@ e:/AAA工作/大三/下学期学校/金相大会/code/.venv/Scripts/python.exe s
 ## 备注
 
 本项目定位为备考刷题工具原型，可在此基础上继续扩展：导入导出进度、账号同步、模拟考试等功能。
-使用AI工具制作~
+
